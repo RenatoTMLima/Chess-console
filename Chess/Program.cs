@@ -1,5 +1,6 @@
 ﻿using System;
-using Chess.Tabuleiro;
+using Chess.tabuleiro;
+using Chess.xadrez;
 
 namespace Chess
 {
@@ -7,7 +8,9 @@ namespace Chess
     {
         static void Main(string[] args)
         {
-            Tabuleiro.Tabuleiro tab = new Tabuleiro.Tabuleiro(8, 8);
+            Tabuleiro tab = new Tabuleiro(8, 8);
+
+            tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 0));
 
             Tela.imprimirTabuleiro(tab);
         }

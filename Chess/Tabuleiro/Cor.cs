@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Chess.Tabuleiro
+namespace Chess.tabuleiro
 {
     enum Cor
     {

@@ -2,21 +2,21 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Chess.Tabuleiro
+namespace Chess.tabuleiro
 {
     class Peca
     {
-        public Posicao Pos { get; set; }
-        public Cor Cor { get; protected set; }
-        public int QtdMovimentos { get; protected set; }
+        public Posicao posicao { get; set; }
+        public Cor cor { get; protected set; }
+        public int qtdMovimentos { get; protected set; }
         public Tabuleiro Tab { get; protected set; }
         
-        public Peca(Posicao pos, Cor cor, Tabuleiro tab)
+        public Peca(Tabuleiro tab, Cor cor)
         {
-            Pos = pos;
-            Cor = cor;
+            posicao = null;
+            this.cor = cor;
             Tab = tab;
-            QtdMovimentos = 0;
+            qtdMovimentos = 0;
         }
     }
 }
