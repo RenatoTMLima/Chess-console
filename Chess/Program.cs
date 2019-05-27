@@ -7,9 +7,9 @@ namespace Chess
     {
         static void Main(string[] args)
         {
-            Posicao P;
+            Tabuleiro.Tabuleiro tab = new Tabuleiro.Tabuleiro(8, 8);
 
-            P = new Posicao(3, 4);
+            Tela.imprimirTabuleiro(tab);
         }
     }
 }
