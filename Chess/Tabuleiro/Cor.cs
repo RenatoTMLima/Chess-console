@@ -4,7 +4,9 @@ using System.Text;
 
 namespace Chess.Tabuleiro
 {
-    class Cor
+    enum Cor
     {
+        Branca,
+        Preta
     }
 }
