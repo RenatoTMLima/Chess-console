@@ -24,6 +24,11 @@ namespace Chess.tabuleiro
             qtdMovimentos++;
         }
 
+        public void decrementarQtdMov()
+        {
+            qtdMovimentos--;
+        }
+
         public bool existeMovimentosPossiveis()
         {
             bool[,] mat = movimentosPossiveis();
