@@ -45,7 +45,7 @@ namespace Chess.tabuleiro
             return false;
         }
 
-        public bool podeMoverParaPosicao(Posicao pos)
+        public bool movimentoPossivel(Posicao pos)
         {
             return movimentosPossiveis()[pos.Linha, pos.Coluna];
         }
